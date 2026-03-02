@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "95GzKx6SLTM=",
+  "dgSpecHash": "f9vD/I8Z8Qc=",
   "success": true,
-  "projectFilePath": "/home/zoe/LinuxGUI/LinuxGUI.csproj",
+  "projectFilePath": "/home/zoe/LinuxGUI/LinuxGUI/LinuxGUI.csproj",
   "expectedPackageFiles": [
     "/home/zoe/.nuget/packages/avalonia/11.3.12/avalonia.11.3.12.nupkg.sha512",
     "/home/zoe/.nuget/packages/avalonia.angle.windows.natives/2.1.25547.20250602/avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",
@@ -19,7 +19,7 @@
     "/home/zoe/.nuget/packages/avalonia.themes.simple/11.3.12/avalonia.themes.simple.11.3.12.nupkg.sha512",
     "/home/zoe/.nuget/packages/avalonia.win32/11.3.12/avalonia.win32.11.3.12.nupkg.sha512",
     "/home/zoe/.nuget/packages/avalonia.x11/11.3.12/avalonia.x11.11.3.12.nupkg.sha512",
-    "/home/zoe/.nuget/packages/communitytoolkit.mvvm/8.2.1/communitytoolkit.mvvm.8.2.1.nupkg.sha512",
+    "/home/zoe/.nuget/packages/communitytoolkit.mvvm/8.4.0/communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "/home/zoe/.nuget/packages/harfbuzzsharp/8.3.1.1/harfbuzzsharp.8.3.1.1.nupkg.sha512",
     "/home/zoe/.nuget/packages/harfbuzzsharp.nativeassets.linux/8.3.1.1/harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
     "/home/zoe/.nuget/packages/harfbuzzsharp.nativeassets.macos/8.3.1.1/harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",

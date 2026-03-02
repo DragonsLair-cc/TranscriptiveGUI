@@ -40,6 +40,7 @@
                             HorizontalContentAlignment="Center"
                             Background="AntiqueWhite"
                             Foreground="Black"
+                            Command="{Binding ToTranscriptive}"
                     />
                     <Button Content="Upload"
                             Width="125"
@@ -47,6 +48,7 @@
                             HorizontalContentAlignment="Center"
                             Background="AntiqueWhite"
                             Foreground="Black"
+                            Command="{Binding ToUpload}"
                     />
                 </StackPanel>
                 

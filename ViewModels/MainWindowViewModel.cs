@@ -13,9 +13,20 @@ public partial class MainWindowViewModel : ViewModelBase
         _currentPage = new HomeViewModel();
     }
 
+    [RelayCommand]
     public void ToHome()
     {
         CurrentPage = new HomeViewModel();
+    }
+    [RelayCommand]
+    public void ToTranscriptive()
+    {
+        CurrentPage = new TranscriptiveViewModel();
+    }
+    [RelayCommand]
+    public void ToUpload()
+    {
+        CurrentPage = new UploadViewModel();
     }
     [RelayCommand]
     public void ToSettings()

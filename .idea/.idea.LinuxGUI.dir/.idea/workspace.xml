@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="273d88b1-a602-499c-b8e2-85edad42c7de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LinuxGUI.dir/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LinuxGUI.dir/.idea/avalonia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LinuxGUI.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LinuxGUI.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/HomeView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/HomeView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/SettingsView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/SettingsView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/LinuxGUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/LinuxGUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/LinuxGUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/LinuxGUI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/LinuxGUI.sourcelink.json" afterDir="false" />
@@ -98,7 +95,7 @@
       <workItem from="1772397757454" duration="1116000" />
       <workItem from="1772398906390" duration="1453000" />
       <workItem from="1772405288623" duration="1033000" />
-      <workItem from="1772407282727" duration="14396000" />
+      <workItem from="1772407282727" duration="14787000" />
     </task>
     <servers />
   </component>

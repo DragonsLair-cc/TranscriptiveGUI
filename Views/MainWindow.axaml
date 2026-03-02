@@ -32,6 +32,7 @@
                             HorizontalContentAlignment="Center"
                             Background="AntiqueWhite"
                             Foreground="Black"
+                            Command="{Binding ToHome}"
                             />
                     <Button Content="Transcribe"
                             Width="125"

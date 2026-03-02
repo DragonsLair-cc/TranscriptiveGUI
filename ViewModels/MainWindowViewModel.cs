@@ -13,6 +13,10 @@ public partial class MainWindowViewModel : ViewModelBase
         _currentPage = new HomeViewModel();
     }
 
+    public void ToHome()
+    {
+        CurrentPage = new HomeViewModel();
+    }
     [RelayCommand]
     public void ToSettings()
     {

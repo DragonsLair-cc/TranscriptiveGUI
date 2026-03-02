@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="273d88b1-a602-499c-b8e2-85edad42c7de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LinuxGUI.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LinuxGUI.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ViewModels/TranscriptiveViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/TranscriptiveViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViewModels/ViewModelBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/ViewModelBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/HomeView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/HomeView.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainWindow.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/SettingsView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/SettingsView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/TranscriptiveView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/TranscriptiveView.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/UploadView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UploadView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/LinuxGUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/LinuxGUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net10.0/LinuxGUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net10.0/LinuxGUI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Avalonia/resources" afterDir="false" />
@@ -105,6 +99,7 @@
       <workItem from="1772424743124" duration="3912000" />
       <workItem from="1772428709308" duration="2740000" />
       <workItem from="1772434460998" duration="913000" />
+      <workItem from="1772467649366" duration="1289000" />
     </task>
     <servers />
   </component>

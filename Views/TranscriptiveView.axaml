@@ -9,9 +9,16 @@
              
     <!-- All this does is create the field for the sample name and test that the input is being pulled properly -->
     <StackPanel HorizontalAlignment="Left" Margin="10,20,0,0">
+        <!-- Create the label and grab input for sample name -->
         <TextBlock Text="Sample Name" FontSize="20" HorizontalAlignment="Left"/>
-        <TextBox Text="{Binding SampleName, Mode=TwoWay}" Watermark="Enter your name..."/>
+        <TextBox Text="{Binding SampleName, Mode=TwoWay}" Watermark="Enter your name..." Width="120"/>
         <TextBlock Text="{Binding SampleName}"/>
+        
+        <!-- Create and grab the type of medicine practiced -->
+        <TextBlock Text="Field of medicine" Width="120"/>
+        <ComboBox ItemsSource="{Binding Options}" SelectedItem="{Binding MediField}"/>
+        <Button Content="Input" Command="{Binding saveField}"/>
+        <TextBlock Text="{Binding MediField}"/>
         
     </StackPanel>
     

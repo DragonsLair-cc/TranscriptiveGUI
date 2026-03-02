@@ -11,14 +11,21 @@
     <StackPanel HorizontalAlignment="Left" Margin="10,20,0,0">
         <!-- Create the label and grab input for sample name -->
         <TextBlock Text="Sample Name" FontSize="20" HorizontalAlignment="Left"/>
-        <TextBox Text="{Binding SampleName, Mode=TwoWay}" Watermark="Enter your name..." Width="120"/>
-        <TextBlock Text="{Binding SampleName}"/>
+        <TextBox Text="{Binding SampleName, Mode=TwoWay}" Watermark="Enter your name..." Width="120" HorizontalAlignment="Left"/>
+        <TextBlock Text="{Binding SampleName}" HorizontalAlignment="Left"/>
         
         <!-- Create and grab the type of medicine practiced -->
-        <TextBlock Text="Field of medicine" Width="120"/>
-        <ComboBox ItemsSource="{Binding Options}" SelectedItem="{Binding MediField}"/>
+        
+        <TextBlock Text="Field of medicine" Width="120" HorizontalAlignment="Left"/>
+        <ComboBox ItemsSource="{Binding Options}" SelectedItem="{Binding MediField}" Width="120" HorizontalAlignment="Left"/>
+        <TextBlock Text="{Binding MediField}" HorizontalAlignment="Left"/>
+        
+        <!-- Create and grab the field for the transcription -->
+        <TextBlock Text="Transcription"/>
+        <TextBox Text="{Binding Transcription, Mode=TwoWay}" Watermark="Enter Transcription" Width="120" HorizontalAlignment="Left"/>
+        <TextBlock Text="{Binding Transcription}" HorizontalAlignment="Left"/>
+        
         <Button Content="Input" Command="{Binding saveField}"/>
-        <TextBlock Text="{Binding MediField}"/>
         
     </StackPanel>
     

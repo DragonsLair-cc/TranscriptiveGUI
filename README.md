@@ -1,6 +1,7 @@
 # Transcriptive GUI - Linux
 Here my aim is to bring the Transcriptive AI's GUI to Linux. The current build is only supported on Windows, which this repo aims to fix.
 # Structure
+## File Structure
 ```
 LinuxGUI
 |   Models - Empty for now
@@ -28,6 +29,15 @@ LinuxGUI
 |   App.axaml
 |   App.axaml.cs
 ```
+
+## Project Structure
+This project is build around Model-View-ViewModel (MVVM) which is a file
+structure that has each tab of the program organised as a "view". The program
+launches with the MainWindow.axaml which contains all permanently loaded UI elements.
+
+After this the MainWindow.axaml loads any views as defined later in the file such as HomeView.axaml.
+
+Each view comes with it's own logic in the "ViewModels" - such as TrancsriptiveViewModel.cs
 
 # Setup
 

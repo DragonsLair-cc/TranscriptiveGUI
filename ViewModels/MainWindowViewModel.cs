@@ -1,6 +1,13 @@
-﻿namespace LinuxGUI.ViewModels;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace LinuxGUI.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    public string Greeting { get; } = "Welcome to Avalonia!";
+    [ObservableProperty] private string _greeting = "Welcome to Transcriptive";
+
+    public void ChangeMessage()
+    {
+        Greeting = "Button Clicked";
+    }
 }

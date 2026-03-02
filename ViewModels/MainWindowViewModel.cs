@@ -4,10 +4,16 @@ namespace LinuxGUI.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    [ObservableProperty] private string _greeting = "Welcome to Transcriptive";
+    [ObservableProperty]
+    private ViewModelBase _currentPage;
 
-    public void ChangeMessage()
+    public MainWindowViewModel()
     {
-        Greeting = "Button Clicked";
+        _currentPage = new HomeViewModel();
+    }
+
+    public void GoToSettings()
+    {
+        //New thing
     }
 }

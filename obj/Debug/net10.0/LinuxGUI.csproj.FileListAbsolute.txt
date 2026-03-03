@@ -156,3 +156,11 @@
 /home/zoe/LinuxGUI/LinuxGUI/bin/Debug/net10.0/Splat.Core.dll
 /home/zoe/LinuxGUI/LinuxGUI/bin/Debug/net10.0/Splat.Logging.dll
 /home/zoe/LinuxGUI/LinuxGUI/bin/Debug/net10.0/System.Reactive.dll
+/home/zoe/LinuxGUI/bin/Debug/net10.0/DynamicData.dll
+/home/zoe/LinuxGUI/bin/Debug/net10.0/ReactiveUI.dll
+/home/zoe/LinuxGUI/bin/Debug/net10.0/ReactiveUI.Avalonia.dll
+/home/zoe/LinuxGUI/bin/Debug/net10.0/Splat.dll
+/home/zoe/LinuxGUI/bin/Debug/net10.0/Splat.Builder.dll
+/home/zoe/LinuxGUI/bin/Debug/net10.0/Splat.Core.dll
+/home/zoe/LinuxGUI/bin/Debug/net10.0/Splat.Logging.dll
+/home/zoe/LinuxGUI/bin/Debug/net10.0/System.Reactive.dll

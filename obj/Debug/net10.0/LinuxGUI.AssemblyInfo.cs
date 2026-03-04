@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinuxGUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+030424b24f1e93683e4e03a338f6f20e30b4dabc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a07b53e257e5405ce6968097c720f3fd95a5d678")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinuxGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinuxGUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -41,7 +41,7 @@
                 <TextBox Width="230" HorizontalAlignment="Left" Text="{Binding Tags, Mode=TwoWay}" Watermark="Tags..."/>
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding Tags}"/>
         
-                <Button Content="Input" Command="{Binding saveField}"/>
+                <Button Content="Input" Command="{Binding SendCommand}"/>
         
             </StackPanel>
         
@@ -50,11 +50,10 @@
         <Panel Width="320" HorizontalAlignment="Right" Margin="5,5,10,5"> 
             <Rectangle Width="320" Height="440" Fill="#606368" RadiusX="5" RadiusY="5"/>
             <Rectangle Width="316" Height="436" Fill="#121212" RadiusX="5" RadiusY="5"/>
-        
             <StackPanel HorizontalAlignment="Left" Margin="10,12,0,0">
                 <!-- This will be the box that displays the JSON string as it is formed -->
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="JSON" FontSize="20"/>
-                <TextBox Width="230" HorizontalAlignment="Left" Text="{Binding SampleName, Mode=TwoWay}" Watermark="Json String" IsReadOnly="True"/>
+                <TextBox Width="230" HorizontalAlignment="Left" Text="Json Test" Watermark="Json String" IsReadOnly="True"/>
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding SampleName}"/>
         
             </StackPanel>

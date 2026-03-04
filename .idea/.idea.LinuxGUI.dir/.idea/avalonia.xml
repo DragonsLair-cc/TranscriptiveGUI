@@ -8,6 +8,7 @@
         <entry key="Views/HomeView.axaml" value="LinuxGUI.csproj" />
         <entry key="Views/MainWindow.axaml" value="LinuxGUI.csproj" />
         <entry key="Views/SettingsView.axaml" value="LinuxGUI.csproj" />
+        <entry key="Views/TranscriptiveView.axaml" value="LinuxGUI.csproj" />
       </map>
     </option>
   </component>

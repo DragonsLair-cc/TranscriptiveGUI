@@ -91,26 +91,26 @@ Here we have the transcription tab, which sends a set of fields to the AI's cont
 ### Sample Name
 
 NOTE !!! This is currently not part of the command, but will be added later on.
-This field represents the reason for a patient's visit, or what procedure was done during their stay.
+This field represents the reason for a patient's visit, or what procedure was done during their stay.\
 
-Laparoscopic Gastric Bypass
-Liposuction
-Urology Consult
-2-D Echocardiogram - 1
-etc.
+Laparoscopic Gastric Bypass\
+Liposuction\
+Urology Consult\
+2-D Echocardiogram - 1\
+etc.\
 
 ### Field of Medicine
 
 NOTE !!! This is currently not part of the command, but will be added later on.
-Currently only three options exist, but this will be expanded to classify multiple medical fields.
+Currently only three options exist, but this will be expanded to classify multiple medical fields.\
 
-Cardiology
-Neurology
-Allergy
-Bariatrics
-Urology
-General Medicine
-etc
+Cardiology\
+Neurology\
+Allergy\
+Bariatrics\
+Urology\
+General Medicine\
+etc\
 
 ### Transcription
 
@@ -119,6 +119,8 @@ etc
 ### Description 
 
 ### Keywords
+
+This is just general keywords to help summarize what is generally being observed.
 
 ## Upload
 

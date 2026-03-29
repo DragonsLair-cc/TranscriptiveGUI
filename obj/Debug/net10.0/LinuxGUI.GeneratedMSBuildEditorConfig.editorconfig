@@ -22,26 +22,26 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LinuxGUI
-build_property.ProjectDir = /home/zoe/LinuxGUI/LinuxGUI/
+build_property.ProjectDir = /home/zoe/TranscriptiveGUI/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/zoe/LinuxGUI/LinuxGUI/App.axaml]
+[/home/zoe/TranscriptiveGUI/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/zoe/LinuxGUI/LinuxGUI/Views/HomeView.axaml]
+[/home/zoe/TranscriptiveGUI/Views/HomeView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/zoe/LinuxGUI/LinuxGUI/Views/MainWindow.axaml]
+[/home/zoe/TranscriptiveGUI/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/zoe/LinuxGUI/LinuxGUI/Views/SettingsView.axaml]
+[/home/zoe/TranscriptiveGUI/Views/SettingsView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/zoe/LinuxGUI/LinuxGUI/Views/TranscriptiveView.axaml]
+[/home/zoe/TranscriptiveGUI/Views/TranscriptiveView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/zoe/LinuxGUI/LinuxGUI/Views/UploadView.axaml]
+[/home/zoe/TranscriptiveGUI/Views/UploadView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

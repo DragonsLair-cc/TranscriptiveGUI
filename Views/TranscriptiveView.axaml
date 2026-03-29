@@ -5,7 +5,8 @@
              xmlns:vm="clr-namespace:LinuxGUI.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="LinuxGUI.Views.TranscriptiveView"
-             x:DataType="vm:TranscriptiveViewModel">
+             x:DataType="vm:TranscriptiveViewModel"
+             Background="#121212">
     
     <!-- I've started to format all elements as Dimensions -> Alignment -> Margins -> Object Properties -->
     <!-- Just a bit of code cleanup -->
@@ -18,28 +19,23 @@
             <StackPanel HorizontalAlignment="Left" Margin="10,12,0,0">
                 <!-- Create the label and grab input for sample name -->
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="Sample Name" Foreground="#ffffff"/>
-                <TextBox Width="230" HorizontalAlignment="Left" Text="{Binding SampleName, Mode=TwoWay}" Watermark="Sample Name..." Foreground="#ffffff"/>
-                <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding SampleName}" Foreground="#ffffff"/>
+                <TextBox Width="230" HorizontalAlignment="Left" Text="{Binding SampleName, Mode=TwoWay}" Watermark="Sample Name..." Background="#0b0b0b" Foreground="#ffffff"/>
         
                 <!-- Create and grab the type of medicine practiced -->
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="Field of medicine" Foreground="#ffffff"/>
-                <ComboBox Width="230" HorizontalAlignment="Left" ItemsSource="{Binding Options}" SelectedItem="{Binding MediField}" Foreground="#ffffff"/>
-                <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding MediField}" Foreground="#ffffff"/>
+                <ComboBox Width="230" HorizontalAlignment="Left" ItemsSource="{Binding Options}" SelectedItem="{Binding MediField}" Background="#0b0b0b" Foreground="#ffffff"/>
         
                 <!-- Create and grab the field for the transcription -->
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="Transcription" Foreground="#ffffff"/>
-                <TextBox Width="230" HorizontalAlignment="Left" Text="{Binding Transcription, Mode=TwoWay}" Watermark="Enter Transcription" Foreground="#ffffff"/>
-                <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding Transcription}" Foreground="#ffffff"/>
+                <TextBox Width="230" HorizontalAlignment="Left" Text="{Binding Transcription, Mode=TwoWay}" Watermark="Enter Transcription" Background="#0b0b0b" Foreground="#ffffff"/>
         
                 <!-- Create and grab the field for the description -->
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="Description" Foreground="#ffffff"/>
-                <TextBox Width="230" Height="80" HorizontalAlignment="Left" Text="{Binding Description, Mode=TwoWay}" Watermark="Description..." Foreground="#ffffff"/>
-                <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding Description}" Foreground="#ffffff"/>
+                <TextBox Width="230" Height="80" HorizontalAlignment="Left" Text="{Binding Description, Mode=TwoWay}" Watermark="Description..." Background="#0b0b0b" Foreground="#ffffff"/>
         
                 <!-- Create and grab the tags field -->
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="Tags" Foreground="#ffffff"/>
-                <TextBox Width="230" HorizontalAlignment="Left" Text="{Binding Tags, Mode=TwoWay}" Watermark="Tags..." Foreground="#ffffff"/>
-                <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding Tags}" Foreground="#ffffff"/>
+                <TextBox Width="230" HorizontalAlignment="Left" Text="{Binding Tags, Mode=TwoWay}" Watermark="Tags..." Background="#0b0b0b" Foreground="#ffffff"/>
         
                 <Button Content="Input" Command="{Binding SendCommand}" Foreground="#ffffff"/>
         
@@ -53,7 +49,7 @@
             <StackPanel HorizontalAlignment="Left" Margin="10,12,0,0">
                 <!-- This will be the box that displays the JSON string as it is formed -->
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="JSON" FontSize="20"/>
-                <TextBox Width="230" HorizontalAlignment="Left" Text="payload" Watermark="Json String" IsReadOnly="True"/>
+                <TextBox Width="230" HorizontalAlignment="Left" Text="payload" Watermark="Json String" IsReadOnly="True" Background="#0b0b0b" Foreground="#ffffff"/>
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding SampleName}"/>
         
             </StackPanel>

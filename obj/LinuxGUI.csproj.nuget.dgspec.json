@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/zoe/LinuxGUI/LinuxGUI/LinuxGUI.csproj": {}
+    "/home/zoe/TranscriptiveGUI/LinuxGUI.csproj": {}
   },
   "projects": {
-    "/home/zoe/LinuxGUI/LinuxGUI/LinuxGUI.csproj": {
+    "/home/zoe/TranscriptiveGUI/LinuxGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/zoe/LinuxGUI/LinuxGUI/LinuxGUI.csproj",
+        "projectUniqueName": "/home/zoe/TranscriptiveGUI/LinuxGUI.csproj",
         "projectName": "LinuxGUI",
-        "projectPath": "/home/zoe/LinuxGUI/LinuxGUI/LinuxGUI.csproj",
+        "projectPath": "/home/zoe/TranscriptiveGUI/LinuxGUI.csproj",
         "packagesPath": "/home/zoe/.nuget/packages/",
-        "outputPath": "/home/zoe/LinuxGUI/LinuxGUI/obj/",
+        "outputPath": "/home/zoe/TranscriptiveGUI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/zoe/.nuget/NuGet/NuGet.Config"
@@ -67,7 +67,7 @@
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.4.0, )"
+              "version": "[8.4.2, )"
             },
             "ReactiveUI.Avalonia": {
               "target": "Package",
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

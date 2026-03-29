@@ -49,7 +49,14 @@
             <StackPanel HorizontalAlignment="Left" Margin="10,12,0,0">
                 <!-- This will be the box that displays the JSON string as it is formed -->
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="JSON" FontSize="20"/>
-                <TextBox Width="230" HorizontalAlignment="Left" Text="payload" Watermark="Json String" IsReadOnly="True" Background="#0b0b0b" Foreground="#ffffff"/>
+                <TextBox Width="230" HorizontalAlignment="Left" Text="payload" Watermark="Json String" IsReadOnly="True" Background="#0b0b0b" Foreground="#ffffff">
+                    <TextBox.Resources>
+                        <SolidColorBrush x:Key="TextControlBorderBrushPointerOver" Color="#ffffff" />
+                        <SolidColorBrush x:Key="TextControlBackgroundPointerOver" Color="#1a1a1a" />
+                        <SolidColorBrush x:Key="TextControlBorderBrushFocused" Color="#ffffff" />
+                        <SolidColorBrush x:Key="TextControlBackgroundFocused" Color="#0b0b0b" />
+                    </TextBox.Resources>
+                </TextBox>
                 <TextBlock Width="230" HorizontalAlignment="Left" Text="{Binding SampleName}"/>
         
             </StackPanel>

@@ -40,7 +40,7 @@ public partial class TranscribeViewModel : ViewModelBase
         
         //Now Additionally Sends The Output To The History Tab
         OutputTranscription = _connection.ExchangeData(payload);
-        WeakReferenceMessenger.Default.Send(new TranscriptionMessage(OutputTranscription));
+        WeakReferenceMessenger.Default.Send(new TranscriptionMessage(TranscriptionValue + "\n" + OutputTranscription));
         
     }
     

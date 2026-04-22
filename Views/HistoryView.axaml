@@ -8,14 +8,20 @@
              x:DataType="vm:HistoryViewModel">
     
     <!--This Is A Placeholder Until I Get More Styling Done-->
-    <ListBox ItemsSource="{Binding TranscriptionHistory}">
-        <ListBox.ItemTemplate>
-            <DataTemplate>
-                <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Padding="10" Margin="2">
-                    <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
-                </Border>
-            </DataTemplate>
-        </ListBox.ItemTemplate>
-    </ListBox>
+    <StackPanel Background="{DynamicResource Gradient}">
+        
+        <Label HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" Content="HISTORY" />
+        <Rectangle Fill="{DynamicResource LabelText}" Width="570" Height="2"/>
+        
+        <ListBox Height="400" Background="{DynamicResource Gradient}" Margin="5,5,5,5" ItemsSource="{Binding TranscriptionHistory}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="{DynamicResource ButtonBackgroundPressed}" Margin="2" Padding="5" BorderThickness="1" CornerRadius="4">
+                        <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
     
 </UserControl>

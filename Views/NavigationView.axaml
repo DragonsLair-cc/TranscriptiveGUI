@@ -11,6 +11,7 @@
         <Grid Background="{DynamicResource Gradient}" Width="200" Height="450" HorizontalAlignment="Left" VerticalAlignment="Center">
             <StackPanel Width="190" Height="450" HorizontalAlignment="Center">
             
+                <!--Header-->
                 <Grid Margin="0,0,0,0">
                     <Image Width="45" HorizontalAlignment="Left" Margin="0,0,0,0" Source="{SvgImage /Assets/transcriptive-logo.svg}"/>
                     <StackPanel HorizontalAlignment="Center" Margin="50,12,0,0">
@@ -22,6 +23,7 @@
             
                 <Rectangle Fill="{DynamicResource LabelText}" Height="2" Margin="0,0,0,10"/>
             
+                <!--Home Button-->
                 <Button Width="175" Height="35" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,5" CornerRadius="0" Command="{Binding OpenHomeView}">
                     <StackPanel Width="160" Height="30" Margin="0,0,0,0" Orientation="Horizontal">
                         <Label Foreground="{DynamicResource ButtonText}" Height="30" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="{DynamicResource PhosphorFill}" Content="&#xe2c6;"/>
@@ -29,6 +31,7 @@
                     </StackPanel>
                 </Button>
             
+                <!--Transcribe Button-->
                 <Button Width="175" Height="35" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,5" CornerRadius="0" Command="{Binding OpenTranscribeView}">
                     <StackPanel Width="160" Margin="0,0,0,0" Orientation="Horizontal">
                         <Label Foreground="{DynamicResource ButtonText}" Height="30" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="{DynamicResource PhosphorFill}" Content="&#xe164;"/>
@@ -36,6 +39,7 @@
                     </StackPanel>
                 </Button>
             
+                <!--History Button-->
                 <Button Width="175" Height="35" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,5" CornerRadius="0" Command="{Binding OpenHistoryView}">
                     <StackPanel Width="160" Margin="0,0,0,0" Orientation="Horizontal">
                         <Label Foreground="{DynamicResource ButtonText}" Height="30" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="{DynamicResource PhosphorFill}" Content="&#xe2f4;"/>
@@ -43,6 +47,7 @@
                     </StackPanel>
                 </Button>
             
+                <!--Upload Button IN PROGRESS-->
                 <Button Width="175" Height="35" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,5" CornerRadius="0">
                     <StackPanel Width="160" Margin="0,0,0,0" Orientation="Horizontal">
                         <Label Foreground="{DynamicResource ButtonText}" Height="30" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="{DynamicResource PhosphorFill}" Content="&#xe61e;"/>
@@ -50,6 +55,7 @@
                     </StackPanel>
                 </Button>
             
+                <!--Settings Button IN PROGRESS-->
                 <Button Width="175" Height="35" HorizontalAlignment="Center" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" Margin="0,170,0,0" CornerRadius="0">
                     <StackPanel Width="160" Height="30" Margin="0,0,0,0" Orientation="Horizontal">
                         <Label Foreground="{DynamicResource ButtonText}" Height="30" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="{DynamicResource PhosphorFill}" Content="&#xe272;"/>
@@ -61,6 +67,7 @@
             
         </Grid>
         
+        <!--If Logged In And In Nav View, This Shows The Current Page-->
         <ContentControl Content="{Binding CurrentView}" />
         
     </DockPanel>

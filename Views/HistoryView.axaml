@@ -10,9 +10,11 @@
     <!--This Is A Placeholder Until I Get More Styling Done-->
     <StackPanel Background="{DynamicResource Gradient}">
         
+        <!--Header-->
         <Label HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" Content="HISTORY" />
         <Rectangle Fill="{DynamicResource LabelText}" Width="570" Height="2"/>
         
+        <!--Displays A Formatted List Of All Previous Transcriptions During This Session-->
         <ListBox Height="400" Background="{DynamicResource Gradient}" Margin="5,5,5,5" ItemsSource="{Binding TranscriptionHistory}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -22,6 +24,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        
     </StackPanel>
     
 </UserControl>

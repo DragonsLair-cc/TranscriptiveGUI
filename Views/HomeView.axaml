@@ -8,7 +8,7 @@
     <!--Home Feels Overly Simple-->
     <StackPanel Background="{DynamicResource Gradient}" Width="590" Height="440" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0">
         
-        <!--Header Bar-->
+        <!--Header-->
         <Label Foreground="{DynamicResource LabelText}" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" Content="HOME"/>
         <Rectangle Fill="{DynamicResource LabelText}" Width="570" Height="2"/>
             

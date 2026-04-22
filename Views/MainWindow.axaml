@@ -13,6 +13,7 @@
         Height="450"
         CanResize="False">
 
+    <!--This Exists Because Login Has To Block The Full Screen Or The User Can Bypass Login Through Navigation-->
     <ContentControl Content="{Binding CurrentView}"/>
     
 </Window>

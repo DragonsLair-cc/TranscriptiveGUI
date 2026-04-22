@@ -48,7 +48,7 @@
                 </Button>
             
                 <!--Upload Button IN PROGRESS-->
-                <Button Width="175" Height="35" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,5" CornerRadius="0">
+                <Button Width="175" Height="35" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,5" CornerRadius="0" Command="{Binding OpenUploadView}">
                     <StackPanel Width="160" Margin="0,0,0,0" Orientation="Horizontal">
                         <Label Foreground="{DynamicResource ButtonText}" Height="30" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="{DynamicResource PhosphorFill}" Content="&#xe61e;"/>
                         <Label Foreground="{DynamicResource ButtonText}" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="{DynamicResource InterFont}" FontSize="14" Content="UPLOAD"/>

@@ -6,7 +6,7 @@ using CommunityToolkit.Mvvm.Messaging;
 
 namespace linux_desktop.ViewModels;
 
-public partial class TranscribeViewModel : ViewModelBase
+public partial class TranscribeViewModel : ViewModelBase, IRecipient<UploadMessage>
 {
 
     [ObservableProperty] private string? _sampleName;
@@ -42,6 +42,22 @@ public partial class TranscribeViewModel : ViewModelBase
         OutputTranscription = _connection.ExchangeData(payload);
         WeakReferenceMessenger.Default.Send(new TranscriptionMessage(TranscriptionValue + "\n" + OutputTranscription));
         
+    }
+    
+    //Register To Receive The Upload Message
+    public TranscribeViewModel()
+    {
+        WeakReferenceMessenger.Default.Register(this);
+    }
+    
+    //Receive The Upload Values And Apply Them
+    public void Receive(UploadMessage message)
+    {
+        SampleName = message.SampleUpload;
+        FieldMedicine = message.FieldUpload;
+        DescriptionValue = message.DescriptionUpload;
+        TranscriptionValue = message.TranscriptionUpload;
+        KeyWords = message.KeyUpload;
     }
     
 }

@@ -9,6 +9,7 @@ public partial class NavigationViewModel : ViewModelBase
     private readonly HomeViewModel _homeView = new();
     private readonly TranscribeViewModel _transcribeView = new();
     private readonly HistoryViewModel _historyView = new();
+    private readonly UploadViewModel _uploadView = new();
     
     [ObservableProperty] private ViewModelBase _currentView;
     
@@ -35,4 +36,10 @@ public partial class NavigationViewModel : ViewModelBase
         CurrentView = _historyView;
     }
     
+    [RelayCommand]
+    public void OpenUploadView()
+    {
+        CurrentView = _uploadView;
+    }
+
 }

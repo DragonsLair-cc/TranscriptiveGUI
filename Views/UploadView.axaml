@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:linux_desktop.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="linux_desktop.Views.UploadView"
+             x:DataType="vm:UploadViewModel">
+    
+    <!--Temporary Layout For Upload While I Test A Sample CSV-->
+    <StackPanel>
+        <Button Width="175" Height="35" CornerRadius="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" Margin="0,10,0,0" Command="{Binding Upload}" CommandParameter="sample.csv">
+            <StackPanel Width="160" Height="30" Orientation="Horizontal" Margin="0,0,0,0">
+                <Label Foreground="{DynamicResource ButtonText}" Height="30" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="{DynamicResource PhosphorFill}" Content="&#xeba6;"/>
+                <Label Foreground="{DynamicResource ButtonText}" Height="30" VerticalContentAlignment="Center" FontFamily="{DynamicResource InterFont}" FontSize="14" Content="CONFIRM"/>
+            </StackPanel>
+        </Button>
+    
+        <Label Content="{Binding SampleUpload}"/>
+        <Label Content="{Binding FieldUpload}"/>
+        <Label Content="{Binding DescriptionUpload}"/>
+        <Label Content="{Binding TranscriptionUpload}"/>
+        <Label Content="{Binding KeyUpload}"/>
+    
+    </StackPanel>
+        
+</UserControl>

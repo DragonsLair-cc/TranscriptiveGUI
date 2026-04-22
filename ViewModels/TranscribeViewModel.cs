@@ -2,7 +2,7 @@ using System;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Tmds.DBus.Protocol;
+using CommunityToolkit.Mvvm.Messaging;
 
 namespace linux_desktop.ViewModels;
 
@@ -15,13 +15,12 @@ public partial class TranscribeViewModel : ViewModelBase
     [ObservableProperty] private string? _descriptionValue;
     [ObservableProperty] private string? _keyWords;
     [ObservableProperty] private string? _outputTranscription;
-
     
     public ObservableCollection<string>? MedicalField { get; } = new() { "Bariatrics", "Cardiology", "Dentistry","General Medicine", "Immunology", "Neurology", "Urology" };
     
     //Connection To Server -- Needs Manual IP And Port Assignment -- Permanent Port Has Been Set To 5867
     //Additional Command To Send To Server
-    private readonly Connection _connection = new Connection("10.12.121.220", 5867);
+    private readonly Connection _connection = new Connection("127.0.0.1", 5867);
     
     [RelayCommand]
     public void Send()
@@ -39,10 +38,12 @@ public partial class TranscribeViewModel : ViewModelBase
                            }
                            """;
         
-        string response = _connection.ExchangeData(payload);
-        
-        OutputTranscription = response;
+        //Now Additionally Sends The Output To The History Tab
+        OutputTranscription = _connection.ExchangeData(payload);
+        WeakReferenceMessenger.Default.Send(new TranscriptionMessage(OutputTranscription));
         
     }
     
 }
+
+public record TranscriptionMessage(string Transcription);

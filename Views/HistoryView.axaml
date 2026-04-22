@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:linux_desktop.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="linux_desktop.Views.HistoryView"
+             x:DataType="vm:HistoryViewModel">
+    
+    <!--This Is A Placeholder Until I Get More Styling Done-->
+    <ListBox ItemsSource="{Binding TranscriptionHistory}">
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Padding="10" Margin="2">
+                    <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                </Border>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+    
+</UserControl>

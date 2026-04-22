@@ -5,6 +5,7 @@
       <map>
         <entry key="App.axaml" value="linux_desktop.csproj" />
         <entry key="Styles/DarkMode.axaml" value="linux_desktop.csproj" />
+        <entry key="Views/HistoryView.axaml" value="linux_desktop.csproj" />
         <entry key="Views/HomeView.axaml" value="linux_desktop.csproj" />
         <entry key="Views/LoginView.axaml" value="linux_desktop.csproj" />
         <entry key="Views/MainWindow.axaml" value="linux_desktop.csproj" />

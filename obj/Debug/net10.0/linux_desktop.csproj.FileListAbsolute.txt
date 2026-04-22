@@ -92,3 +92,4 @@
 /home/zoe/linux_desktop/bin/Debug/net10.0/runtimes/linux-x64/native/libSkiaSharp.so.116.0.0
 /home/zoe/linux_desktop/bin/Debug/net10.0/Firebase.Auth.dll
 /home/zoe/linux_desktop/bin/Debug/net10.0/Newtonsoft.Json.dll
+/home/zoe/linux_desktop/obj/Debug/net10.0/linux_desktop.sourcelink.json

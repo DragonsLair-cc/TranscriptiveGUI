@@ -8,9 +8,9 @@ public partial class NavigationViewModel : ViewModelBase
     
     private readonly HomeViewModel _homeView = new();
     private readonly TranscribeViewModel _transcribeView = new();
+    private readonly HistoryViewModel _historyView = new();
     
-    [ObservableProperty]
-    private ViewModelBase _currentView;
+    [ObservableProperty] private ViewModelBase _currentView;
     
     public NavigationViewModel()
     {
@@ -27,6 +27,12 @@ public partial class NavigationViewModel : ViewModelBase
     public void OpenTranscribeView()
     {
         CurrentView = _transcribeView;
+    }
+    
+    [RelayCommand]
+    public void OpenHistoryView()
+    {
+        CurrentView = _historyView;
     }
     
 }

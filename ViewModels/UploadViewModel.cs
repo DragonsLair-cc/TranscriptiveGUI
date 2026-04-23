@@ -13,11 +13,11 @@ public partial class UploadViewModel : ViewModelBase
 {
     
     //This Just Sets Our Variables To Send To The Transcribe View
-    [ObservableProperty] private string _sampleUpload;
-    [ObservableProperty] private string _fieldUpload;
-    [ObservableProperty] private string _descriptionUpload;
-    [ObservableProperty] private string _transcriptionUpload;
-    [ObservableProperty] private string _keyUpload;
+    [ObservableProperty] private string? _sampleUpload;
+    [ObservableProperty] private string? _fieldUpload;
+    [ObservableProperty] private string? _descriptionUpload;
+    [ObservableProperty] private string? _transcriptionUpload;
+    [ObservableProperty] private string? _keyUpload;
 
     [RelayCommand]
     public void Upload(string filePath)
@@ -49,11 +49,11 @@ public partial class UploadViewModel : ViewModelBase
     public class PatientRecord
     {
         [Index(0)] public int? Id { get; set; }
-        [Name("description")] public string Description { get; set; }
-        [Name("medical_specialty")] public string MedicalSpecialty { get; set; }
-        [Name("sample_name")] public string SampleName { get; set; }
-        [Name("transcription")] public string Transcription { get; set; }
-        [Name("keywords")] public string Keywords { get; set; }
+        [Name("description")] public string? Description { get; set; }
+        [Name("medical_specialty")] public string? MedicalSpecialty { get; set; }
+        [Name("sample_name")] public string? SampleName { get; set; }
+        [Name("transcription")] public string? Transcription { get; set; }
+        [Name("keywords")] public string? Keywords { get; set; }
     }
 
 }

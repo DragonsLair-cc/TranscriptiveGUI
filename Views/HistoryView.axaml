@@ -8,7 +8,7 @@
              x:DataType="vm:HistoryViewModel">
     
     <!--This Is A Placeholder Until I Get More Styling Done-->
-    <StackPanel Background="{DynamicResource Gradient}">
+    <StackPanel Background="{DynamicResource Gradient}" Margin="5,5,5,5">
         
         <!--Header-->
         <Label HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" Content="HISTORY" />

@@ -22,7 +22,7 @@
                     
                     <!--Description EX: Patient is a 25 year old caucasian adult male-->
                     <Label Margin="10,0,0,0" FontSize="16" FontWeight="Bold" Content="Description"/>
-                    <TextBox Width="260" Height="110" HorizontalAlignment="Left" Margin="10,0,0,0" Text="{Binding DescriptionValue}" TextWrapping="Wrap"/>
+                    <TextBox Width="260" Height="115" HorizontalAlignment="Left" Margin="10,0,0,0" Text="{Binding DescriptionValue}" TextWrapping="Wrap"/>
                     
                     <!--Transcription EX: Patient presents with an occasional heart murmur and reports mild chest pains-->
                     <Label Margin="10,0,0,0" FontSize="16" FontWeight="Bold" Content="Transcription"/>

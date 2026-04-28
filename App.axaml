@@ -11,7 +11,8 @@
   
     <Application.Styles>
         <FluentTheme />
-        <StyleInclude Source="avares://linux_desktop/Styles/DarkMode.axaml" />
+        <!--StyleInclude Source="avares://linux_desktop/Styles/LightMode.axaml"/-->
+        <StyleInclude Source="avares://linux_desktop/Styles/DarkMode.axaml"/>
     </Application.Styles>
              
     <Application.Resources>

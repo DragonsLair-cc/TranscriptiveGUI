@@ -18,6 +18,7 @@ public partial class TranscribeViewModel : ViewModelBase, IRecipient<UploadMessa
     [ObservableProperty] private string? _firstName;
     [ObservableProperty] private string? _lastName;
     [ObservableProperty] private string? _outputTranscription;
+    public float ConfPlaceholder = 0;
     
     public ObservableCollection<string>? MedicalField { get; } = new() { " Allergy / Immunology",
         " Bariatrics",
@@ -81,9 +82,12 @@ public partial class TranscribeViewModel : ViewModelBase, IRecipient<UploadMessa
                                "fields": {
                                    "Description": "{{DescriptionValue}}",
                                    "Transcription": "{{TranscriptionValue}}",
+                                   "MedicalSpecialty": "{{FieldMedicine}}",
+                                   "SampleName": "{{SampleName}}",
                                    "Keywords": "{{KeyWords}}",
                                    "p_firstname": "{{FirstName}}",
-                                   "p_lastname": "{{LastName}}"
+                                   "p_lastname": "{{LastName}}",
+                                   "confidence": "0"
                                }
                            }
                            """;

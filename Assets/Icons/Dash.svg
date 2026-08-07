@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Dash.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1"
+     inkscape:cx="400"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 8.4010842,17.979692 H 15.598916 M 1.2032528,15.089569 v -2.974178 c 0,-1.383287 0,-2.074989 0.1776065,-2.7119366 C 1.538192,8.8392301 1.79675,8.3085673 2.1438294,7.8375012 2.5356554,7.3057184 3.0795356,6.8810871 4.1672958,6.0318242 L 7.286356,3.59663 c 1.6858521,-1.3162344 2.528742,-1.9743398 3.459542,-2.2273219 0.821272,-0.2232139 1.686932,-0.2232139 2.508204,0 0.9308,0.2529821 1.773666,0.9110994 3.459518,2.2273219 l 3.11906,2.4351942 c 1.087832,0.8492629 1.631629,1.2738942 2.02343,1.805677 0.347176,0.4710661 0.605699,1.0017289 0.762971,1.5659532 0.177667,0.6369476 0.177667,1.3286496 0.177667,2.7119366 v 2.974178 c 0,2.69769 0,4.046654 -0.523043,5.076983 -0.460061,0.906295 -1.19412,1.643277 -2.096968,2.105095 -1.026531,0.524917 -2.370247,0.524917 -5.057676,0.524917 H 8.8809396 c -2.6874423,0 -4.0311574,0 -5.0576281,-0.524917 C 2.9204035,21.809829 2.1863206,21.072847 1.7262593,20.166552 1.2032528,19.136223 1.2032528,17.787259 1.2032528,15.089569 Z"
+     stroke="#000000"
+     stroke-width="2.40385"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path1"
+     style="stroke:#ffffff;stroke-opacity:1" />
+</svg>

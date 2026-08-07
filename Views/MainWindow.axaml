@@ -1,0 +1,78 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:linux_desktop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="linux_desktop.Views.MainWindow"
+        x:DataType="vm:MainViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Transcriptive"
+        Width="1280"
+        Height="720" 
+        Background="{DynamicResource Shell}">
+        
+        <SplitView DisplayMode="CompactInline" CompactPaneLength="56" OpenPaneLength="240" IsPaneOpen="{Binding PaneState}">
+                <SplitView.Pane>
+                        <Grid RowDefinitions="8,48,40,48,48,48,48,48,*,8,48,8" Background="{DynamicResource Shell}">
+                                
+                                <Button Classes="Nav" Grid.Row="1" Command="{Binding PaneToggleCommand}">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Image Source="{SvgImage /Assets/Icons/Menu.svg}" Height="18"/>
+                                                <Label Classes="Nav" Content="Shell"/>
+                                        </StackPanel>
+                                </Button>
+                                
+                                <Rectangle Grid.Row="2" Fill="#999999" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="8,0,8,0"/>
+                                
+                                <Button Classes="Nav" Grid.Row="3" Command="{Binding ToDashCommand}">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Image Source="{SvgImage /Assets/Icons/Dash.svg}" Height="18"/>
+                                                <Label Classes="Nav" Content="Dashboard"/>
+                                        </StackPanel>
+                                </Button>
+                                <Button Classes="Nav" Grid.Row="4" Command="{Binding ToTranscribeCommand}">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Image Source="{SvgImage /Assets/Icons/Transcribe.svg}" Height="18"/>
+                                                <Label Classes="Nav" Content="Transcribe"/>
+                                        </StackPanel>
+                                </Button>
+                                <Button Classes="Nav" Grid.Row="5" Command="{Binding ToTrainingCommand}">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Image Source="{SvgImage /Assets/Icons/Train.svg}" Height="18"/>
+                                                <Label Classes="Nav" Content="Upload For Training"/>
+                                        </StackPanel>
+                                </Button>
+                                <Button Classes="Nav" Grid.Row="6" Command="{Binding ToUploadCommand}">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Image Source="{SvgImage /Assets/Icons/Folder.svg}" Height="18"/>
+                                                <Label Classes="Nav" Content="Load From File"/>
+                                        </StackPanel>
+                                </Button>
+                                <Button Classes="Nav" Grid.Row="7" Command="{Binding ToHistoryCommand}">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Image Source="{SvgImage /Assets/Icons/History.svg}" Height="18"/>
+                                                <Label Classes="Nav" Content="Session History"/>
+                                        </StackPanel>
+                                </Button>
+                                
+                                <Rectangle Grid.Row="9" Fill="#999999" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="8,0,8,0"/>
+                                
+                                <Button Classes="Nav" Grid.Row="10" Command="{Binding ToSettingsCommand}">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Image Source="{SvgImage /Assets/Icons/Settings.svg}" Height="18"/>
+                                                <Label Classes="Nav" Content="Settings"/>
+                                        </StackPanel>
+                                </Button>
+                                
+                        </Grid>
+                </SplitView.Pane>
+                
+                <SplitView.Content>
+                        <Border Background="{DynamicResource Background}" BorderBrush="#2E2E2E" BorderThickness="2" CornerRadius="20" Margin="0,8,8,8">
+                                <ContentControl Content="{Binding CurrentView}" />
+                        </Border>
+                </SplitView.Content>
+        </SplitView>
+
+</Window>

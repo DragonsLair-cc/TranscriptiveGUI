@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:linux_desktop.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="linux_desktop.Views.HistoryView"
+             x:DataType="vm:HistoryViewModel">
+    
+    <Grid RowDefinitions="64,4,*">
+        <Label Classes="Title" Grid.Row="0" Content="History"/>
+        <Rectangle Grid.Row="1" Fill="#999999" Height="2" HorizontalAlignment="Stretch" Margin="8,0,8,0"/>
+        <ListBox Grid.Row="2" CornerRadius="10" VerticalAlignment="Stretch" Background="#00000000" Margin="16,16,16,16" ItemsSource="{Binding TranscriptionHistory}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="{DynamicResource Border}" Margin="2" Padding="5" BorderThickness="1" CornerRadius="4">
+                        <TextBlock Foreground="{DynamicResource Text}" Text="{Binding}" TextWrapping="Wrap"/>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+    
+</UserControl>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="clipboard-arrow-up-svgrepo-com.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.73539105"
+     inkscape:cx="270.60433"
+     inkscape:cy="387.54891"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 7.2005159,3.5996439 C 6.0146232,3.6005678 5.3930181,3.615638 4.9111859,3.8611413 4.4596384,4.0912023 4.0925259,4.4583112 3.8624625,4.9098543 3.6009027,5.4231781 3.6009027,6.0951594 3.6009027,7.4391338 V 18.957784 c 0,1.343962 0,2.016003 0.2615598,2.529304 0.2300634,0.451507 0.5971759,0.818663 1.0487234,1.048676 0.5133288,0.26157 1.1853166,0.26157 2.5293041,0.26157 h 9.11902 c 1.343976,0 2.016023,0 2.529328,-0.26157 0.451512,-0.230013 0.818672,-0.597169 1.048687,-1.048676 0.261572,-0.513301 0.261572,-1.185342 0.261572,-2.529304 V 7.4391338 c 0,-1.3439744 0,-2.0159557 -0.261572,-2.5292795 C 19.90751,4.4583112 19.54035,4.0912023 19.088838,3.8611413 18.60697,3.615638 17.985437,3.6005678 16.799484,3.5996439 m -9.5989681,0 V 5.9993027 H 16.799484 V 3.5996439 m -9.5989681,0 V 3.2481571 c 0,-0.5432484 0.2158087,-1.0642393 0.5999354,-1.4483622 0.3841268,-0.384123 0.9051228,-0.5999297 1.4483764,-0.5999297 h 5.5023573 c 0.543181,0 1.064285,0.2158067 1.448364,0.5999297 0.384079,0.3841229 0.599935,0.9051138 0.599935,1.4483622 V 3.5996439 M 12,10.79874 v 7.199156 m 0,-7.199156 2.399742,2.399718 M 12,10.79874 9.6002579,13.198458"
+     stroke="#000000"
+     stroke-width="2.39973"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path1"
+     style="stroke:#ffffff;stroke-opacity:1" />
+</svg>

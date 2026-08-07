@@ -1,0 +1,52 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:linux_desktop.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="linux_desktop.Views.DashboardView"
+             x:DataType="vm:DashboardViewModel">
+    
+    <Grid ColumnDefinitions="*,*">
+        <Grid Grid.Column="0" ColumnDefinitions="*,*">
+            
+            <Grid Grid.Column="0" RowDefinitions="*,*,*,*">
+                <Border Grid.Row="0" CornerRadius="10" Background="#00000000" BorderThickness="1" BorderBrush="{DynamicResource Border}" Margin="8,8,8,8">
+                    <StackPanel>
+                        <Label Classes="Widget" Content="Notice"/>
+                        <Rectangle Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                        <Label Classes="Widget" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                            <TextBox Classes="Widget" Text="Welcome back and thanks for choosing to use Transcriptive!" TextWrapping="Wrap"/>
+                        </Label>
+                    </StackPanel>
+                </Border>
+                <Border Grid.Row="1" CornerRadius="10" Background="#00000000" BorderThickness="1" BorderBrush="{DynamicResource Border}" Margin="8,8,8,8">
+                    <StackPanel>
+                        <Label Classes="Widget" Content="Current User"/>
+                        <Rectangle Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                        <Label Classes="Widget" Content="{Binding UserNameMessage}"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            
+            <Grid Grid.Column="1" RowDefinitions="*,*,*,*,*,*">
+                <Border Grid.Row="0" CornerRadius="10" Background="#00000000" BorderThickness="1" BorderBrush="{DynamicResource Border}" Margin="8,8,8,8">
+                    <StackPanel>
+                        <Label Classes="Widget" Content="Position"/>
+                        <Rectangle Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                        <Label Classes="Widget" Content="{Binding UserJob}"/>
+                    </StackPanel>
+                </Border>
+                <Border Grid.Row="1" CornerRadius="10" Background="#00000000" BorderThickness="1" BorderBrush="{DynamicResource Border}" Margin="8,8,8,8">
+                    <StackPanel>
+                        <Label Classes="Widget" Content="Current User"/>
+                        <Rectangle Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                        <Label Classes="Widget" Content="{Binding UserNameMessage}"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            
+        </Grid>
+    </Grid>
+    
+</UserControl>

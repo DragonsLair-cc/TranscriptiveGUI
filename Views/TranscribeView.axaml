@@ -1,0 +1,61 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:linux_desktop.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="linux_desktop.Views.TranscribeView"
+             x:DataType="vm:TranscribeViewModel">
+    <Grid RowDefinitions="64,4,*,*">
+        
+        <Label Classes="Title" Grid.Row="0" Content="Transcriptions"/>
+        
+        <Rectangle Grid.Row="1" Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" Margin="8,0,8,0"/>
+        
+        <Grid Grid.Row="2" ColumnDefinitions="*,*">
+            <Border Grid.Column="0" Background="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="16,16,8,8" BorderBrush="#2E2E2E" BorderThickness="2" CornerRadius="15">
+                <Grid RowDefinitions="26,4,*">
+                    <Label Classes="Widget" Grid.Row="0" Content="Patient Description"/>
+                    <Rectangle Grid.Row="1" Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                    <TextBox Classes="Widget" Grid.Row="2"  Margin="2,2,2,2" CornerRadius="0,0,10,10" Text="{Binding PatientDescription}"/>
+                </Grid>
+            </Border>
+            
+            <Border Grid.Column="1" Background="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="8,16,16,8" BorderBrush="#2E2E2E" BorderThickness="2" CornerRadius="15">
+                <Grid RowDefinitions="26,4,*">
+                    <Label Classes="Widget" Grid.Row="0" Content="Reported Issues"/>
+                    <Rectangle Grid.Row="1" Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                    <TextBox Classes="Widget" Grid.Row="2"  Margin="2,2,2,2" CornerRadius="0,0,10,10" Text="{Binding PatientReport}"/>
+                </Grid>
+            </Border>
+        </Grid>
+        
+        <Grid Grid.Row="3" ColumnDefinitions="*,256">
+            <Border Grid.Column="0" Background="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="16,8,8,16" BorderBrush="#2E2E2E" BorderThickness="2" CornerRadius="15">
+                <Grid RowDefinitions="26,4,*">
+                    <Label Classes="Widget" Grid.Row="0" Content="Key Words"/>
+                    <Rectangle Grid.Row="1" Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                    <TextBox Classes="Widget" Grid.Row="2"  Margin="2,2,2,2" CornerRadius="0,0,10,10" Text="{Binding KeyWords}"/>
+                </Grid>
+            </Border>
+            
+            <Grid Grid.Column="1" RowDefinitions="*,64">
+                <Border Grid.Row="0" Background="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="8,8,16,8" BorderBrush="#2E2E2E" BorderThickness="2" CornerRadius="15">
+                    <Grid RowDefinitions="26,4,*">
+                        <Label Classes="Widget" Grid.Row="0" Content="Results"/>
+                        <Rectangle Grid.Row="1" Fill="{DynamicResource Border}" Height="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                        <TextBox Classes="Widget" Grid.Row="2"  Margin="2,2,2,2" CornerRadius="0,0,10,10" IsReadOnly="True" Text="{Binding TranscriptiveOutput}"/>
+                    </Grid>
+                </Border>
+                
+                <Button Classes="Widget" Grid.Row="1" Margin="8,8,16,16" Command="{Binding TranscribeCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{SvgImage /Assets/Icons/Upload.svg}" Height="18"/>
+                        <Label Classes="Nav" Content="Transcribe"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</UserControl>

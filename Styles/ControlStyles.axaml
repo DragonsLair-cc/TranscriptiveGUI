@@ -1,0 +1,80 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+        <Style Selector="Label.Nav">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="Azure"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="12,0,0,0"/>
+                <Setter Property="Padding" Value="0,4,0,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Axiforma}"/>
+                <Setter Property="FontSize" Value="16"/>
+        </Style>
+        
+        <Style Selector="Label.Title">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="Azure"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="{StaticResource AxiformaBold}"/>
+                <Setter Property="FontSize" Value="32"/>
+        </Style>
+        
+        <Style Selector="Label.Widget">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="Azure"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="{StaticResource AxiformaBold}"/>
+                <Setter Property="FontSize" Value="20"/>
+        </Style>
+        
+        <Style Selector="TextBox.Widget">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Foreground" Value="{DynamicResource Text}"/>
+                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                <Setter Property="FontFamily" Value="{StaticResource Axiforma}"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                
+                <Style Selector="^:pointerover /template/ Border#PART_BorderElement">
+                        <Setter Property="Background" Value="#22000000"/>
+                </Style>
+                
+                <Style Selector="^:focus /template/ Border#PART_BorderElement">
+                        <Setter Property="Background" Value="#22000000"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                
+        </Style>
+        
+        <Style Selector="Button.Nav">
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Height" Value="40"/>
+                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="8,0,8,0"/>
+                <Setter Property="Padding" Value="11,0,11,0"/>
+                <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+        
+        <Style Selector="Button.Widget">
+                <Setter Property="Background" Value="#8839EF"/>
+                <Setter Property="Height" Value="40"/>
+                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="Margin" Value="8,8,16,16"/>
+                <Setter Property="Padding" Value="12,0,12,0"/>
+                <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+        
+</Styles>

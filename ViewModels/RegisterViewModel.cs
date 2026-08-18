@@ -101,14 +101,16 @@ public partial class RegisterViewModel : ViewModelBase
             {
                 { "email", new { stringValue = email } },
                 { "FirstnameLastname", new { stringValue = name } },
-                { "admin", new {booleanValue = admin} }
+                { "admin", new {booleanValue = admin} },
+                { "transcriptionCount", new {integerValue = 0 } },
+                { "lastTranscription", new {stringValue = "" } }
             }
         };
 
         string jsonBody = JsonSerializer.Serialize(fields);
         var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
         
-        string url = $"https://firestore.googleapis.com/v1/projects/transcriptive-ai/databases/(default)/documents/users/{uid}" + $"?updateMask.fieldPaths=email" + $"&updateMask.fieldPaths=FirstnameLastname" + $"&updateMask.fieldPaths=admin";
+        string url = $"https://firestore.googleapis.com/v1/projects/transcriptive-ai/databases/(default)/documents/users/{uid}" + $"?updateMask.fieldPaths=email" + $"&updateMask.fieldPaths=FirstnameLastname" + $"&updateMask.fieldPaths=admin" + $"&updateMask.fieldPaths=transcriptionCount" + $"&updateMask.fieldPaths=lastTranscription";
 
         HttpResponseMessage response = await httpClient.PatchAsync(url, content);
 

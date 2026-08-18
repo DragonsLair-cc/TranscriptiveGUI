@@ -8,26 +8,28 @@ public partial class NavigationViewModel : ViewModelBase
 {
     //Basic Initial State
     [ObservableProperty] private bool _paneState;
-    [ObservableProperty] public partial ObservableObject CurrentView { get; set; } = new LoginViewModel();
+    [ObservableProperty] private ViewModelBase _currentView;
     
-    [ObservableProperty] private User _currentUser;
+    [ObservableProperty] private User? _currentUser;
     
     //I only did this for settings to keep toggle states on view switching - I should really just implement a settings file though
     private readonly SettingsViewModel _settingsView = new();
+    private readonly HistoryViewModel _historyView = new();
 
-    public NavigationViewModel()
+    public NavigationViewModel(User currentUser)
     {
-        CurrentView = new DashboardViewModel(_currentUser);
+        CurrentUser = currentUser;
+        _currentView = new DashboardViewModel(CurrentUser);
     }
     
     //Button Commands
     [RelayCommand] private void PaneToggle() => PaneState = !PaneState;
     
     [RelayCommand] private void ToDash() => CurrentView = new DashboardViewModel(_currentUser);
-    [RelayCommand] private void ToTranscribe() => CurrentView = new TranscribeViewModel();
+    [RelayCommand] private void ToTranscribe() => CurrentView = new TranscribeViewModel(_currentUser);
     [RelayCommand] private void ToTraining() => CurrentView = new TrainingViewModel();
     [RelayCommand] private void ToUpload() => CurrentView = new UploadViewModel();
-    [RelayCommand] private void ToHistory() => CurrentView = new HistoryViewModel();
+    [RelayCommand] private void ToHistory() => CurrentView = _historyView;
     [RelayCommand] private void ToSettings() => CurrentView = _settingsView;
-
+    
 }

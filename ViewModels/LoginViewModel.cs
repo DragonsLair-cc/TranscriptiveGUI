@@ -89,9 +89,12 @@ public partial class LoginViewModel : ViewModelBase
         return new Models.User
         {
             Uid = uid,
+            IdToken = idToken,
             Email = GetFirestoreString(fields,"email"),
             Name = GetFirestoreString(fields, "FirstnameLastname"),
-            WorkPosition = GetFirestoreBoolean(fields, "admin")
+            WorkPosition = GetFirestoreBoolean(fields, "admin"),
+            TranscriptionCount = GetFirestoreInt(fields, "transcriptionCount"),
+            LastTranscription =  GetFirestoreString(fields, "lastTranscription"),
         };
     }
 
@@ -108,6 +111,18 @@ public partial class LoginViewModel : ViewModelBase
         if (fields.TryGetProperty(propertyName, out JsonElement prop) && prop.TryGetProperty("booleanValue", out JsonElement booleanVal))
             return booleanVal.GetBoolean();
 
+        return null;
+    }
+
+    private static int? GetFirestoreInt(JsonElement fields, string propertyName)
+    {
+        if (fields.TryGetProperty(propertyName, out JsonElement prop) && prop.TryGetProperty("integerValue", out JsonElement intVal))
+        {
+            if (intVal.ValueKind == JsonValueKind.String && int.TryParse(intVal.GetString(), out int result))
+                return result;
+            if (intVal.ValueKind == JsonValueKind.Number)
+                return intVal.GetInt32();
+        }
         return null;
     }
     

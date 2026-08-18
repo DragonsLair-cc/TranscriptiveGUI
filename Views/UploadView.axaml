@@ -2,10 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:linux_desktop.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="linux_desktop.Views.UploadView">
-    <Grid RowDefinitions="64,4,*,*">
+             x:Class="linux_desktop.Views.UploadView"
+             x:DataType="vm:UploadViewModel">
+    <Grid RowDefinitions="64,4,*">
         <Label Classes="Title" Grid.Row="0" Content="Load Contents From File"/>
         <Rectangle Grid.Row="1" Fill="#999999" Height="2" HorizontalAlignment="Stretch" Margin="8,0,8,0"/>
+        <Button Grid.Row="2" Content="Load File" Click="OpenFileButton_Clicked"/>
     </Grid>
 </UserControl>

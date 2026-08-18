@@ -1,6 +1,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using linux_desktop.Models;
+using linux_desktop.Views;
 
 namespace linux_desktop.ViewModels;
 
@@ -24,7 +25,7 @@ public partial class MainViewModel : ViewModelBase
         LoginVM.OnLoginSuccess = (user) =>
         {
             CurrentUser = user;
-            CurrentView = new DashboardViewModel(_currentUser);
+            CurrentView = new NavigationViewModel(CurrentUser);
         };
         
         registerVM.OnRegisterSuccess = () =>
@@ -36,15 +37,5 @@ public partial class MainViewModel : ViewModelBase
         
         _currentView = LoginVM;
     }
-    
-    //Button Commands
-    [RelayCommand] private void PaneToggle() => PaneState = !PaneState;
-    
-    [RelayCommand] private void ToDash() => CurrentView = new DashboardViewModel(_currentUser);
-    [RelayCommand] private void ToTranscribe() => CurrentView = new TranscribeViewModel();
-    [RelayCommand] private void ToTraining() => CurrentView = new TrainingViewModel();
-    [RelayCommand] private void ToUpload() => CurrentView = new UploadViewModel();
-    [RelayCommand] private void ToHistory() => CurrentView = _historyView;
-    [RelayCommand] private void ToSettings() => CurrentView = _settingsView;
     
 }
